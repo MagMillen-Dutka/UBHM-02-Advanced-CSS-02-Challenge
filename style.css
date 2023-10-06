@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgb(146, 208, 255), rgba(98, 201, 253, 0.975));
+    background-image: linear-gradient(#92d0ff, #62c9fdf9);
     color: var(--black)
 }
 header {
@@ -17,6 +17,7 @@ header {
     align-items: center;
     justify-content: space-between;
     border: 2px solid #0016a3cb;
+    background-image: linear-gradient(#2e82ffe7, #5fc7fbf9);
     margin: 5px;
     padding: 10px;
 }
@@ -37,22 +38,13 @@ header nav ul li {
     font-size: 20px;
     margin-left: 15px;
 }
-.mywork, .about, .contact {
+
+.full-body {
     border: 2px solid #0016a3cb;
+    background-image: linear-gradient(#2e82ffe7, #5fc7fbf9);
     margin: 3px;
     padding: 5px;
-
 }
-.main-image {
-    /*
-    border: 2px solid #0016a3cb;
-    border-radius: 50%;
-    margin: 5px;
-    padding: 5px; 
-    justify-content: center;
-    image-resolution: 10%; */
-} 
-
 #main-image {
     max-width: 350px;
     height: 300px;
@@ -60,13 +52,36 @@ header nav ul li {
     border-radius: 50%;
     box-shadow: 2px 5px 5px 2px;
     padding: 5px;
-    display: block;
+    display: flex;
     margin: 0 auto;
+}
+.mywork, .about, .contact {
+    border: 2px solid #0016a3cb;
+    background-image: linear-gradient(#2e82ffe7, #5fc7fbf9);
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+} 
+/* #mywork-title {
+    align-content: center;
+    
+} */
+
+/* .mywork {
+    display: flex;
+} */
+
+.body-boxes {
+    position: relative;
+    display: inline-flex;
+    width: 0 auto;
+    border: 2px solid #0016a3cb;
+    border-radius: 3%;
     
 }
 
-.body-boxes {
-    display: inline-block;
-    border: 2px solid #0016a3cb;
-    border-radius: 3%;
+.contact ul {
+    list-style: none;
+    border: none;
+    background-image: none;
 }
