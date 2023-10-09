@@ -51,8 +51,6 @@ header nav ul li {
 .full-body {
     display: inline-block;
     width: 100%;
-    /* margin: 3px; */
-    /* padding: 5px; */
 }
 #main-image {
     max-width: 350px;
@@ -72,6 +70,7 @@ header nav ul li {
 .mywork {
     position: relative; 
     width: 0 auto;
+    padding: 25px;
     text-align: center;
 }
 .main-card-image {
@@ -82,8 +81,8 @@ header nav ul li {
     padding: 1px;
     text-align: center;
 }
-#main-card-image{
-    max-width: 250x;
+#main-card-image {
+    max-width: 250px;
     height: 250px;
     display: inline-flex;
     box-shadow: 0px 2px 3px 0px;
@@ -91,36 +90,37 @@ header nav ul li {
     padding: 1px;
     text-align: center;
 }
-.card-container {
-    display: inline-flex;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    color: #cd6007;
-}
-.content-card {
-    max-width: 200px;
-    height: 200px;
+#main-card-image-link {
+    max-width: 250px;
+    height: 250px;
     display: inline-flex;
     box-shadow: 0px 2px 3px 0px;
-    margin: 5px;
+    margin: 2px;
     padding: 1px;
     text-align: center;
-    
 }
-.card-container-2 {
-    display: inline-flex;
-    margin: 5px;
-    padding: 5px;
+.card-container, .card-container-2 {
+    max-width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: 1px;
+    padding: 1px;
     text-align: center;
-    color: #cd6007;
 }
-.content-card-2 {
-    max-width: 200px;
-    height: 200px;
+.content-card, .content-card-2 {
+    max-width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 2px;
+    padding: 1px;
+    text-align: center;
+}
+#content-card-link, #content-card-link-2 {
+    max-width: 150px;
+    height: 150px;
     display: inline-flex;
     box-shadow: 0px 2px 3px 0px;
-    margin: 5px;
+    margin: 2px;
     padding: 1px;
     text-align: center;
 }
