@@ -6,6 +6,7 @@ body {
     background-image: linear-gradient(#00021beb, #000323);
     color: #B7B7B7;
     font-size: 16px;
+    width: 100%;
 }
 /* Header section. This includes headline text on left and nav bar on right hand side. */
 header {
@@ -15,10 +16,11 @@ header {
     justify-content: space-between;
     background-image: linear-gradient(#00000f, #00021b);
     color: #cd6007;
-    margin: 5px;
+    margin: 0 auto;
     padding: 10px;
+    width: 100%;
 }
-/* Main image used for self-portrait photo */
+/* Image used for self-portrait photo */
 #main-image {
     max-width: 100%;
     height: 75px;
@@ -26,10 +28,13 @@ header {
     border: 1px solid #cd6007;
     padding: 1px;
     display: inline-flex;
+    margin-left: 5px;
+    margin-right: 260px;
 }
 header h1 {
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
+    align-items: center;
 }
 header nav {
     font-size: 20px;
@@ -127,7 +132,9 @@ p {
 }
 
 .footer {
-    display: block;
+    display: inline-block;
+    margin: 2px;
+    padding-top: 5px;
     width: 100%;
     background-image: linear-gradient(#00000f, #00021b);
     text-align: center;
