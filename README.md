@@ -39,7 +39,7 @@ n/a
 ```
 ## Usage
 ```
-Please find the source code located here: https://github.com/MagMillen-Dutka/UBHM-01-HTML-Git-CSS-02-Challenge/blob/main/index.html
+Please find the source code located here: [https://github.com/MagMillen-Dutka/UBHM-01-HTML-Git-CSS-02-Challenge/blob/main/index.html](https://github.com/MagMillen-Dutka/UBHM-02-Advanced-CSS-02-Challenge)
 Opening this file will allow the html & css code to be read and evaluated.
 
 ```
