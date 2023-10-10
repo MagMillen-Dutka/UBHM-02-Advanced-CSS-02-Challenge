@@ -2,11 +2,11 @@
     box-sizing:border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
 body {
     background-image: linear-gradient(#00021beb, #000323);
     color: #B7B7B7;
 }
+/* Header section. This includes headline text on left and nav bar on right hand side. */
 header {
     display: flex;
     align-items: center;
@@ -28,25 +28,25 @@ header nav ul {
     list-style: none;
     color: #cd6007;
 } 
-/* List items in navigation bar */
 header nav ul li {
     display: inline; 
     font-size: 20px;
     margin-left: 15px;
     color: #cd6007;
 }
-
+/* used for main titles across each section - as well as nav header text; do not remove 'a' as it reverts to standard link text */
 .h1, .h2, .h3, .h4, .h5, a {
     color: #cd6007;
     text-decoration: none;
 }
 p {
     font-size: 16px;
-}
+}/* This covers the main section within the body - all other sections fall within this */
 .full-body {
     display: inline-block;
     width: 100%;
 }
+/* Main image used for self-portrait photo */
 #main-image {
     max-width: 300px;
     height: 200px;
@@ -56,6 +56,7 @@ p {
     display: flex;
     margin: 0 auto;
 }
+/* Main sections within full-body section */
 .mywork, .about, .contact {
     background-image: linear-gradient(#00000f, #00021b);
     margin: 3px;
@@ -68,6 +69,7 @@ p {
     padding: 25px;
     text-align: center;
 }
+/* This section covers the cards within the 'my work' section. It is broken into main card at the top, and other links thereafter */
 .main-card-image {
     max-width: 100%;
     height: 200px;
