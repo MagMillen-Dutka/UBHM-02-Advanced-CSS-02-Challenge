@@ -3,8 +3,8 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
-    background-image: linear-gradient(#00021beb, #000323);
-    color: #B7B7B7;
+    background-image: linear-gradient(#f9f9ffeb, #e5f9f8);
+    color: #1c15ff;
     font-size: 16px;
     width: 100%;
 }
@@ -14,13 +14,12 @@ header {
     align-items: center;
     vertical-align: middle;
     justify-content: space-between;
-    background-image: linear-gradient(#00000f, #00021b);
-    color: #cd6007;
+    background-image: linear-gradient(#2323f7, #5d67fb);
+    color: #ffffff;
     margin: 0 auto;
     padding: 10px;
     width: 100%;
 }
-
 .main-head-image {
     display: inline-flex;
 }
@@ -29,7 +28,7 @@ header {
     max-width: 100%;
     height: 75px;
     border-radius: 50%;
-    border: 1px solid #cd6007;
+    border: 1px solid #1c15ff;
     padding: 1px;
     display: inline-flex;
     margin-left: 5px;
@@ -43,99 +42,128 @@ header h1 {
 header nav {
     font-size: 20px;
     margin-right: 5px;
-    color: #cd6007;
-} 
+    } 
 header nav ul {
     list-style: none;
-    color: #cd6007;
+    color: #ffffff;
 } 
 header nav ul li {
     display: inline; 
     font-size: 20px;
     margin-left: 15px;
-    color: #cd6007;
+    color: #ffffff;
 }
 /* used for main titles across each section - as well as nav header text; do not remove 'a' as it reverts to standard link text */
-.h1, .h2, .h3, .h4, .h5, a {
-    color: #cd6007;
+.h1, .h2, .h3, .h4, .h5 {
+    color: #1c15ff;
     text-decoration: none;
 }
-p {
-    font-size: 16px;
-}/* This covers the main section within the body - all other sections fall within this */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.row-about, .row-mywork, .row-contact {
+    display:flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.column1 {
+    width: 25%;
+    float: left;
+    padding: 20px;
+    border-right: 2px solid #1c15ff;
+}
+.column2 {
+    width: 75%;
+
+}
+/* This covers the main section within the body of column2 - all other sections fall within this */
 .full-body {
-    display: inline-block;
+    display: block;
+    justify-content: space-between;
     width: 100%;
 }
 /* Main sections within full-body section */
-.mywork, .about, .contact {
-    background-image: linear-gradient(#00000f, #00021b);
+.about, .contact {
     margin: 3px;
     padding: 5px;
-    text-align: center;
+    text-align: left;
 } 
 .mywork {
+    margin: 5px;
     position: relative; 
     padding: 5px;
-    text-align: center;
+    text-align: left;
 }
 /* This section covers the cards within the 'my work' section. It is broken into main card at the top, and other links thereafter */
 .main-card-image {
     max-width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
+    object-fit: fill;
     display: inline-block;
     margin: 1px;
+    margin-right: 35px;
     padding: 1px;
-    text-align: center;
 }
-
 #main-card-image-link {
     max-width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: fill;
     display: inline-flex;
-    box-shadow: 0px 2px 3px 0px;
+    color:#27b1f6;
+    border: 1px solid #27b1f6;
+    box-shadow: 0px 1px 3px 0px;
     margin: 2px;
     padding: 1px;
-    text-align: center;
 }
 .card-container, .card-container-2 {
     max-width: 100%;
-    height: 250px;
-    object-fit: contain;
-    display: inline;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
     margin: 1px;
+    margin-right: 35px;
     padding: 1px;
     text-align: center;
 }
 .content-card, .content-card-2 {
-    max-width: 100%;
-    height: 250px;
-    object-fit: contain;
-    display: inline-block;
-    margin: 5px;
+    width: 380px;
+    height: 180px;
+    display: flex;
+    overflow: hidden;
+    color:#27b1f6;
+    border: 1px solid #27b1f6;
+    box-shadow: 0px 1px 4px 0px;
+    margin: 10px;
     padding: 5px;
     text-align: center;
 }
+
 #content-card-link, #content-card-link-2 {
-    max-width: 100%;
-    height: 150px;
-    object-fit: contain;
-    display: inline-flex;
-    box-shadow: 0px 2px 3px 0px;
-    margin: 2px;
+    width: 380px;
+    height: 280px;
+    display: flex;
+    margin: 0px;
     padding: 1px;
     text-align: center;
 }
 
 .contact ul {
+    display: flex;
+    justify-content: space-between;
+    text-align:left;
+    width: 100%;
     list-style: none;
     border: none;
     background-image: none;
 }
 
-.footer {
+#contact ul li {
+    display: inline;
+}
+
+/*saved for future adoption */
+/* .footer {
     display: inline-block;
     margin: 2px;
     padding-top: 5px;
@@ -143,10 +171,11 @@ p {
     background-image: linear-gradient(#00000f, #00021b);
     text-align: center;
     font-size: 16px;
-}
+} */
 
 @media screen and (max-width: 800px) {
     body {
         background-image: linear-gradient(#4176e8eb, #27b1f6);
     }
   }
+
